@@ -14,7 +14,7 @@ variables:
 steps:
 - task: Docker@2
   inputs:
-    containerRegistry: 'acrmanual'
+    containerRegistry: 'acr'
     repository: 'angular'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
